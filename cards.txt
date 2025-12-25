@@ -1,0 +1,7 @@
+base_entry: Le mot {} veut dire quoi?
+output_file: output.txt
+create_from_dir: true
+
+Front;Back;Image
+La pomme; Apple
+Nuggets; Funions

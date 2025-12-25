@@ -10,7 +10,6 @@ Convert.create_anki_deck = function(info_table)
 	end
 
 	local out_file_ref = io.open(info_table.output_file, "wb")
-
 	
 	if out_file_ref == nil then
 		return
@@ -34,7 +33,7 @@ Convert.create_anki_deck = function(info_table)
 		current_entry = ""
 
 		if info_table.base_entry ~= '' then
-			card[FRONT_INDEX] = Util.str_replace(info_table.base_entry, "{}", card[FRONT_INDEX])
+			card.front = Util.str_replace(info_table.base_entry, "{}", card.front)
 		end
 
 
